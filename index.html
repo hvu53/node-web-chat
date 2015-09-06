@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>FSE Chat room by Hoa Vu </title>
+  
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans Condensed:300italic,300,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="bs-docs-grid">
+
+  <header class="navbar navbar-static-top">
+    <h3> FSE chat application </h3>
+  </header>
+
+  <div class="container">
+    <section class="nameWrap">
+      <h4> Enter your name below to login to the chatroom:</h4>
+      <div id="nameError"></div>
+      <form id ="setName">
+        <div class="form-group">
+          <input id="nickname" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-info"/>
+        </div>
+        
+      </form>
+    </section>
+    <section class="contentWrap">
+      <div class="chatWrap col-md-10">
+        <div id="chat">
+          
+        </div>
+
+        <form id="send-message">
+          <p id="notifyUser"></p>
+          
+          <div class="form-group">
+            <textarea class="form-control" rows="3" id="message" placeholder="Type yor message here.."></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-info form-control" value="Post"/>
+          </div>
+        </form>
+      </div>
+      
+      <div id="users" class="col-md-2"> </div>
+
+    </section>
+
+    
+  </div>
+  
+  <!-- <footer class="footer">
+    <div class="">
+      <div class="col-md-2">
+        <img src="../public/img/1.png" height="120px">
+      </div>
+      <div class="col-md-2">
+        <img src="../public/img/2.png" height="120px">
+      </div>
+      <div class="col-md-2">
+        <img src="../public/img/3.png" height="100px">
+      </div>
+      <div class="col-md-2">
+        <img src="../public/img/4.png" height="120px">
+      </div>
+      <div class="col-md-2">
+        <img src="../public/img/5.png" height="80px">
+      </div>
+      <div class="col-md-2">
+        <img src="../public/img/6.png" height="100px">
+      </div>
+    </div>
+  </footer> -->
+
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="chat.js"></script>
+ 
+</body>
+</html>
